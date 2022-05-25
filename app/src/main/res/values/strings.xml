@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bill Please</string>
+    <string name="toggle">toggleBtn</string>
+    <string name="noSVC">no SVC</string>
+    <string name="SVC10">SVC 10%</string>
+    <string name="noGST">no GST</string>
+    <string name="GST7">GST 7%</string>
+    <string name="split">Split</string>
+    <string name="reset">Reset</string>
+    <string name="PayNow">PayNow</string>
+    <string name="Cash">Cash</string>
+    <string name="display">Display Bill</string>
+
+</resources>

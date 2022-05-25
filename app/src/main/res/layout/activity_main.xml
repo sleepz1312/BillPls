@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/pax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No of Pax"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/svc"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/toggle"
+            android:textOff="@string/noSVC"
+            android:textOn="@string/SVC10" />
+
+        <ToggleButton
+            android:id="@+id/gst"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/toggle"
+            android:textOff="@string/noGST"
+            android:textOn="@string/GST7" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Discount(%)"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonCash"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Cash"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonPaynow"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:text="@string/PayNow"/>
+
+        </RadioGroup>
+
+    <EditText
+        android:id="@+id/phoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PayNow Phone no"
+        android:inputType="phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="204dp"
+            android:text="@string/split" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="204dp"
+            android:text="@string/reset"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/display" />
+
+</LinearLayout>
